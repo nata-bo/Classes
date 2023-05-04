@@ -2,6 +2,7 @@ public class Account {
    private Person owner;
     private String iban;
     private double balance;
+    private double percent;
 
     public Account(Person owner, String iban, double balance) {
         this.owner = owner;
@@ -14,7 +15,8 @@ public class Account {
     }
     public void setBalance(double balance){
         if(balance>0) {
-            this.balance = balance;
+            this.percent = this.percent+1;
+            this.balance = balance-1;
         }
     }
 
